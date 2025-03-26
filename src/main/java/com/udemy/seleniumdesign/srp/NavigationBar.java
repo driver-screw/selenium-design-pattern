@@ -6,7 +6,7 @@ import org.openqa.selenium.support.FindBy;
 
 public class NavigationBar extends AbstractComponent {
 
-    @FindBy(id = "hdtb")
+    @FindBy(className = "crJ18e")
     private WebElement bar;
 
     @FindBy(linkText = "Images")
@@ -29,6 +29,6 @@ public class NavigationBar extends AbstractComponent {
 
     @Override
     public boolean isDisplayed() {
-        return false;
+        return wait.until(_ -> bar.isDisplayed());
     }
 }
