@@ -9,11 +9,11 @@ import org.testng.annotations.BeforeTest;
 import java.util.concurrent.TimeUnit;
 
 public class BestTest {
-    private WebDriver driver;
+    protected WebDriver driver;
 
     @BeforeTest
     public void setupDriver() {
-        System.setProperty("webdriver.gecko.driver", "/home/qa/drivers/geckodriver");
+        System.setProperty("webdriver.gecko.driver", "src/test/resources/geckodriver");
         this.driver = new FirefoxDriver();
     }
 

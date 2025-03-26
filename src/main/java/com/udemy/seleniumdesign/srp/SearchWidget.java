@@ -1,8 +1,11 @@
 package com.udemy.seleniumdesign.srp;
 
+import com.google.common.util.concurrent.Uninterruptibles;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import java.util.concurrent.TimeUnit;
 
 public class SearchWidget extends AbstractComponent{
 
@@ -16,7 +19,11 @@ public class SearchWidget extends AbstractComponent{
 
     public void enter(String keyword) {
         searchBox.clear();
-        searchBox.sendKeys(keyword);
+        for (char c : keyword.toCharArray()) {
+            Uninterruptibles.sleepUninterruptibly(20, TimeUnit.MILLISECONDS);
+            searchBox.sendKeys(Character.toString(c));
+
+        }
     }
 
 
