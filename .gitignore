@@ -3,6 +3,8 @@ target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+src/test/resources/**/*.zip
+
 ### IntelliJ IDEA ###
 .idea/
 .idea/modules.xml
