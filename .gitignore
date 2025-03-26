@@ -4,6 +4,7 @@ target/
 !**/src/test/**/target/
 
 src/test/resources/**/*.zip
+src/test/resources/geckodriver
 
 ### IntelliJ IDEA ###
 .idea/
