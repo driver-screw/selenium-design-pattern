@@ -2,14 +2,14 @@ package com.udemy.seleniumdesign.test.srp;
 
 import com.udemy.seleniumdesign.srp.main.GoogleMainPage;
 import com.udemy.seleniumdesign.srp.result.GoogleResultPage;
-import com.udemy.seleniumdesign.test.BestTest;
+import com.udemy.seleniumdesign.test.BaseTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertTrue;
 
-public class GoogleTest extends BestTest {
+public class GoogleTest extends BaseTest {
 
     private GoogleMainPage googleMainPage;
     private GoogleResultPage googleResultPage;

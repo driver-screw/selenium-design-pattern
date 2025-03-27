@@ -4,7 +4,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
-public class GoogleArabic extends GoogleEnglish {
+class GoogleArabic extends GoogleEnglish {
 
     @FindBy(css = "div#gws-output-pages-elements-homepage_additional_languages_als a")
     private WebElement language;
