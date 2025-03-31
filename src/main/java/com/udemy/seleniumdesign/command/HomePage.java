@@ -36,16 +36,16 @@ public class HomePage {
     @FindBy(css = ".jq-icon-error")
     private WebElement dangerAlert;
 
-    @FindBy(css = ".alert-info")
+    @FindBy(css = ".card-body .row div:nth-child(2) .alert-info")
     private WebElement dismissalInfoAlert;
 
-    @FindBy(css = ".alert-success")
+    @FindBy(css = ".card-body .row div:nth-child(2) .alert-success")
     private WebElement dismissalSuccessAlert;
 
-    @FindBy(css = ".alert-danger")
+    @FindBy(css = ".card-body .row div:nth-child(2) .alert-danger")
     private WebElement dismissalDangerAlert;
 
-    @FindBy(css = ".alert-warning")
+    @FindBy(css = ".card-body .row div:nth-child(2) .alert-warning")
     private WebElement dismissalWarningAlert;
 
 
