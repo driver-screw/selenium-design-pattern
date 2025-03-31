@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class OrderComponent {
 
-    @FindBy(id = "byu")
+    @FindBy(id = "buy")
     private WebElement byuBtn;
 
     @FindBy(id = "ordernumber")

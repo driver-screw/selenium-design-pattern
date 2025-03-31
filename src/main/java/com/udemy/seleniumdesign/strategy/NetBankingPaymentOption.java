@@ -22,6 +22,6 @@ public class NetBankingPaymentOption implements PaymentOption {
         Select bankDropdown = new Select(bank);
         bankDropdown.selectByValue(paymentDetails.get("bank"));
         accountNumber.sendKeys(paymentDetails.get("year"));
-        pin.sendKeys(paymentDetails.get("cvv"));
+        pin.sendKeys(paymentDetails.get("pin"));
     }
 }
