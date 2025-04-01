@@ -13,10 +13,10 @@ public class AmazonShopping extends ShoppingTemplate {
     @FindBy(id = "twotabsearchtextbox")
     private WebElement searchBox;
 
-    @FindBy(css = ".nav-input")
+    @FindBy(id = "nav-search-submit-button")
     private WebElement searchBtn;
 
-    @FindBy(css = ".a-size-medium")
+    @FindBy(css = ".s-result-item .puisg-row .a-link-normal")
     private WebElement item;
 
     @FindBy(id = "priceblock_ourprice")
